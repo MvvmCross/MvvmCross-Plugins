@@ -7,14 +7,15 @@
 //
 // Project Lead - Stuart Lodge, Cirrious. http://www.cirrious.com - Hire me - I'm worth it!
 
-using MvvmCross.Platform.Core;
-using MvvmCross.Platform.Exceptions;
 using System;
 using Windows.Devices.Sensors;
+using MvvmCross.Platform.Core;
+using MvvmCross.Platform.Exceptions;
+using MvvmCross.Plugins.Accelerometer.Abstractions;
 
-namespace MvvmCross.Plugins.Accelerometer.WindowsStore
+namespace MvvmCross.Plugins.Accelerometer
 {
-    public class MvxStoreAccelerometer : IMvxAccelerometer
+    public class MvxAccelerometer : IMvxAccelerometer
     {
         private bool _started;
         private Windows.Devices.Sensors.Accelerometer _accelerometer;

@@ -7,8 +7,8 @@
     <ProjectTypeGuids>{C089C8C0-30E0-4E22-80C0-CE093F111A43};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>MvvmCross.Plugins.Accelerometer.WindowsPhone</RootNamespace>
-    <AssemblyName>MvvmCross.Plugins.Accelerometer.WindowsPhone</AssemblyName>
+    <RootNamespace>MvvmCross.Plugins.Accelerometer</RootNamespace>
+    <AssemblyName>MvvmCross.Plugins.Accelerometer</AssemblyName>
     <TargetFrameworkIdentifier>WindowsPhone</TargetFrameworkIdentifier>
     <TargetFrameworkVersion>v8.0</TargetFrameworkVersion>
     <SilverlightVersion>$(TargetFrameworkVersion)</SilverlightVersion>
@@ -56,9 +56,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\MvvmCross.Plugins.Accelerometer\MvvmCross.Plugins.Accelerometer.csproj">
-      <Project>{B81C8F9A-FE2C-4807-90BA-D34CB25D8CE6}</Project>
-      <Name>MvvmCross.Plugins.Accelerometer</Name>
+    <ProjectReference Include="..\MvvmCross.Plugins.Accelerometer.Abstractions\MvvmCross.Plugins.Accelerometer.Abstractions.csproj">
+      <Project>{061cf78a-25b7-4089-9aca-ba336739e731}</Project>
+      <Name>MvvmCross.Plugins.Accelerometer.Abstractions</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

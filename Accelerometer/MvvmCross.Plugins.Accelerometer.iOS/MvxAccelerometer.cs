@@ -10,9 +10,10 @@
 using System;
 using MvvmCross.Platform.Core;
 using MvvmCross.Platform.Exceptions;
+using MvvmCross.Plugins.Accelerometer.Abstractions;
 using UIKit;
 
-namespace MvvmCross.Plugins.Accelerometer.iOS
+namespace MvvmCross.Plugins.Accelerometer
 {
     public class MvxAccelerometer
         : IMvxAccelerometer

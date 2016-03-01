@@ -7,13 +7,15 @@
 //
 // Project Lead - Stuart Lodge, Cirrious. http://www.cirrious.com - Hire me - I'm worth it!
 
+using System;
 using MvvmCross.Platform.Core;
 using MvvmCross.Platform.Exceptions;
-using System;
+using MvvmCross.Plugins.Accelerometer.Abstractions;
 
-namespace MvvmCross.Plugins.Accelerometer.Wpf
+namespace MvvmCross.Plugins.Accelerometer
 {
-    public class MvxAccelerometer : IMvxAccelerometer
+    public class MvxAccelerometer 
+        : IMvxAccelerometer
     {
         // TODO - mahybe try WindowsAPICodePack from http://msdn.microsoft.com/en-us/windows7trainingcourse_win7sensorsmanaged_topic2.aspx
         //private Windows.Devices.Sensors.Accelerometer _accelerometer;

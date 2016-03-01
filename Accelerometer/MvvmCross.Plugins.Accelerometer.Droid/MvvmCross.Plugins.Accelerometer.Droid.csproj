@@ -7,12 +7,12 @@
     <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>MvvmCross.Plugins.Accelerometer.Droid</RootNamespace>
-    <AssemblyName>MvvmCross.Plugins.Accelerometer.Droid</AssemblyName>
+    <RootNamespace>MvvmCross.Plugins.Accelerometer</RootNamespace>
+    <AssemblyName>MvvmCross.Plugins.Accelerometer</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
-    <TargetFrameworkVersion>v5.0</TargetFrameworkVersion>
-    <AndroidUseLatestPlatformSdk>False</AndroidUseLatestPlatformSdk>
+    <TargetFrameworkVersion>v6.0</TargetFrameworkVersion>
+    <AndroidUseLatestPlatformSdk>True</AndroidUseLatestPlatformSdk>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>True</DebugSymbols>
@@ -53,10 +53,6 @@
       <HintPath>..\..\packages\MvvmCross.Core.4.0.0\lib\MonoAndroid\MvvmCross.Droid.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="MvvmCross.Localization, Version=4.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\MvvmCross.Platform.4.0.0\lib\MonoAndroid\MvvmCross.Localization.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
     <Reference Include="MvvmCross.Platform, Version=4.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\packages\MvvmCross.Platform.4.0.0\lib\MonoAndroid\MvvmCross.Platform.dll</HintPath>
       <Private>True</Private>
@@ -76,9 +72,9 @@
     <Compile Include="MvxAccelerometer.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\MvvmCross.Plugins.Accelerometer\MvvmCross.Plugins.Accelerometer.csproj">
-      <Project>{B81C8F9A-FE2C-4807-90BA-D34CB25D8CE6}</Project>
-      <Name>MvvmCross.Plugins.Accelerometer</Name>
+    <ProjectReference Include="..\MvvmCross.Plugins.Accelerometer.Abstractions\MvvmCross.Plugins.Accelerometer.Abstractions.csproj">
+      <Project>{061cf78a-25b7-4089-9aca-ba336739e731}</Project>
+      <Name>MvvmCross.Plugins.Accelerometer.Abstractions</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

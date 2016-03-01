@@ -9,15 +9,16 @@
 
 using MvvmCross.Platform;
 using MvvmCross.Platform.Plugins;
+using MvvmCross.Plugins.Accelerometer.Abstractions;
 
-namespace MvvmCross.Plugins.Accelerometer.WindowsCommon
+namespace MvvmCross.Plugins.Accelerometer
 {
     public class Plugin
         : IMvxPlugin
     {
         public void Load()
         {
-            Mvx.RegisterSingleton<IMvxAccelerometer>(new MvxWindowsCommonAccelerometer());
+            Mvx.RegisterSingleton<IMvxAccelerometer>(new MvxAccelerometer());
         }
     }
 }

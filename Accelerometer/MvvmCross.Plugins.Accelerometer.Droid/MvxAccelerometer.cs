@@ -10,17 +10,18 @@
 using System;
 using Android.Content;
 using Android.Hardware;
+using MvvmCross.Platform;
 using MvvmCross.Platform.Core;
 using MvvmCross.Platform.Droid;
 using MvvmCross.Platform.Exceptions;
-using MvvmCross.Platform;
+using MvvmCross.Plugins.Accelerometer.Abstractions;
 
-namespace MvvmCross.Plugins.Accelerometer.Droid
+namespace MvvmCross.Plugins.Accelerometer
 {
     public class MvxAccelerometer
         : Java.Lang.Object
-          , ISensorEventListener
-          , IMvxAccelerometer
+        , ISensorEventListener
+        , IMvxAccelerometer
     {
         private Sensor _accelerometer;
         private SensorManager _sensorManager;
