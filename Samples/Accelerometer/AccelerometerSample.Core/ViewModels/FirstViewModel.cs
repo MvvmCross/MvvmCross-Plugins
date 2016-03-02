@@ -69,12 +69,16 @@ namespace AccelerometerSample.Core.ViewModels
         {
             _accelerometer.Start();
             RaisePropertyChanged(() => Started);
+            _stopReadingCommand.RaiseCanExecuteChanged();
+            _startReadingCommand.RaiseCanExecuteChanged();
         }
 
         private void DoStopReadingCommand()
         {
             _accelerometer.Stop();
             RaisePropertyChanged(() => Started);
+            _stopReadingCommand.RaiseCanExecuteChanged();
+            _startReadingCommand.RaiseCanExecuteChanged();
         }
     }
 }
