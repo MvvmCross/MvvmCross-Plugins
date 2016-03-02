@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
 	<metadata>
 		<id>MvvmCross.Plugin.Accelerometer</id>
-		<version>4.0.0</version>
+		<version>4.1.0</version>
 		<title>MvvmCross - Accelerometer Plugin</title>
 		<authors>MvvmCross</authors>
 		<owners>Stuart Lodge</owners>
@@ -72,43 +72,32 @@ This package contains the 'Accelerometer' plugin for MvvmCross</description>
 		<file src="..\bin\Release\Mvx\Portable\MvvmCross.Plugins.Accelerometer.*" target="lib\dotnet" />
 
 		<!-- wpf  -->
-		<file src="..\bin\Release\Mvx\Portable\MvvmCross.Plugins.Accelerometer.*" target="lib\net45" />
-		<file src="..\bin\Release\Mvx\Wpf\MvvmCross.Plugins.Accelerometer.Wpf.*" target="lib\net45" />
+		<file src="..\bin\Release\Mvx\Wpf\MvvmCross.Plugins.Accelerometer.*" target="lib\net45" />
 		<file src="BootstrapContent\AccelerometerPluginBootstrap.cs.pp" target="content\net45\Bootstrap\AccelerometerPluginBootstrap.cs.pp" />
 
 		<!-- store -->
-		<file src="..\bin\Release\Mvx\Portable\MvvmCross.Plugins.Accelerometer.*" target="lib\netcore45" />
-		<file src="..\bin\Release\Mvx\WindowsStore\MvvmCross.Plugins.Accelerometer.WindowsStore.*" target="lib\netcore45" />
+		<file src="..\bin\Release\Mvx\WindowsStore\MvvmCross.Plugins.Accelerometer.*" target="lib\netcore45" />
 		<file src="BootstrapContent\AccelerometerPluginBootstrap.cs.pp" target="content\netcore45\Bootstrap\AccelerometerPluginBootstrap.cs.pp" />
 
 		<!-- phone -->
-		<file src="..\bin\Release\Mvx\Portable\MvvmCross.Plugins.Accelerometer.*" target="lib\wp8" />
-		<file src="..\bin\Release\Mvx\WindowsPhone\MvvmCross.Plugins.Accelerometer.WindowsPhone.*" target="lib\wp8" />
+		<file src="..\bin\Release\Mvx\WindowsPhone\MvvmCross.Plugins.Accelerometer.*" target="lib\wp8" />
 		<file src="BootstrapContent\AccelerometerPluginBootstrap.cs.pp" target="content\wp8\Bootstrap\AccelerometerPluginBootstrap.cs.pp" />
 
 		<!-- windows common -->
-		<file src="..\bin\Release\Mvx\Portable\MvvmCross.Plugins.Accelerometer.*" target="lib\win81" />
-		<file src="..\bin\Release\Mvx\WindowsCommon\MvvmCross.Plugins.Accelerometer.WindowsCommon.*" target="lib\win81" />
+		<file src="..\bin\Release\Mvx\WindowsCommon\MvvmCross.Plugins.Accelerometer.*" target="lib\win81" />
 		<file src="BootstrapContent\AccelerometerPluginBootstrap.cs.pp" target="content\win81\Bootstrap\AccelerometerPluginBootstrap.cs.pp" />
 
-		<file src="..\bin\Release\Mvx\Portable\MvvmCross.Plugins.Accelerometer.*" target="lib\wpa81" />
-		<file src="..\bin\Release\Mvx\WindowsCommon\MvvmCross.Plugins.Accelerometer.WindowsCommon.*" target="lib\wpa81" />
-
+		<file src="..\bin\Release\Mvx\WindowsCommon\MvvmCross.Plugins.Accelerometer.*" target="lib\wpa81" />
 		<file src="BootstrapContent\AccelerometerPluginBootstrap.cs.pp" target="content\wpa81\Bootstrap\AccelerometerPluginBootstrap.cs.pp" />
 
-		<file src="..\bin\Release\Mvx\Portable\MvvmCross.Plugins.Accelerometer.*" target="lib\portable-win81+wpa81" />
-		<file src="..\bin\Release\Mvx\WindowsCommon\MvvmCross.Plugins.Accelerometer.WindowsCommon.*" target="lib\portable-win81+wpa81" />
+		<file src="..\bin\Release\Mvx\WindowsCommon\MvvmCross.Plugins.Accelerometer.*" target="lib\portable-win81+wpa81" />
 
 		<!-- droid -->
-		<file src="..\bin\Release\Mvx\Portable\MvvmCross.Plugins.Accelerometer.*" target="lib\MonoAndroid" />
-		<file src="..\bin\Release\Mvx\Droid\MvvmCross.Plugins.Accelerometer.Droid.*" target="lib\MonoAndroid" />
-
+		<file src="..\bin\Release\Mvx\Droid\MvvmCross.Plugins.Accelerometer.*" target="lib\MonoAndroid" />
 		<file src="BootstrapContent\AccelerometerPluginBootstrap.cs.pp" target="content\MonoAndroid\Bootstrap\AccelerometerPluginBootstrap.cs.pp" />
 
 		<!-- iOS -->
-		<file src="..\bin\Release\Mvx\Portable\MvvmCross.Plugins.Accelerometer.*" target="lib\Xamarin.iOS10" />
-		<file src="..\bin\Release\Mvx\iOS\MvvmCross.Plugins.Accelerometer.iOS.*" target="lib\Xamarin.iOS10" />
-
+		<file src="..\bin\Release\Mvx\iOS\MvvmCross.Plugins.Accelerometer.*" target="lib\Xamarin.iOS10" />
 		<file src="iOSBootstrapContent\AccelerometerPluginBootstrap.cs.pp" target="content\Xamarin.iOS10\Bootstrap\AccelerometerPluginBootstrap.cs.pp" />
 
 		<!-- mac -->
