@@ -10,7 +10,7 @@
 using MvvmCross.Platform;
 using MvvmCross.Platform.Plugins;
 
-namespace MvvmCross.Plugins.Accelerometer
+namespace MvvmCross.Plugins.Accelerometer.Abstractions
 {
     public class PluginLoader
         : IMvxPluginLoader

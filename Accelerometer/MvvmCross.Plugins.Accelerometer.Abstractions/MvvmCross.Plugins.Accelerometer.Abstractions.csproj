@@ -36,6 +36,7 @@
   <ItemGroup>
     <Compile Include="IMvxAccelerometer.cs" />
     <Compile Include="MvxAccelerometerReading.cs" />
+    <Compile Include="PluginLoader.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
