@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AccelerometerSample.Core", "Accelerometer\AccelerometerSample.Core\AccelerometerSample.Core.csproj", "{BE778ACD-1BB0-4E70-A264-894422CD7ACD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Accelerometer", "Accelerometer", "{12244782-40AD-4C14-9FA7-CA2A917FA19A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AccelerometerSample.Droid", "Accelerometer\AccelerometerSample.Droid\AccelerometerSample.Droid.csproj", "{46F3B2F6-2D7E-41C1-9D7B-C85A3E6812B1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BE778ACD-1BB0-4E70-A264-894422CD7ACD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE778ACD-1BB0-4E70-A264-894422CD7ACD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE778ACD-1BB0-4E70-A264-894422CD7ACD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE778ACD-1BB0-4E70-A264-894422CD7ACD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{46F3B2F6-2D7E-41C1-9D7B-C85A3E6812B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{46F3B2F6-2D7E-41C1-9D7B-C85A3E6812B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{46F3B2F6-2D7E-41C1-9D7B-C85A3E6812B1}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{46F3B2F6-2D7E-41C1-9D7B-C85A3E6812B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{46F3B2F6-2D7E-41C1-9D7B-C85A3E6812B1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{46F3B2F6-2D7E-41C1-9D7B-C85A3E6812B1}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{BE778ACD-1BB0-4E70-A264-894422CD7ACD} = {12244782-40AD-4C14-9FA7-CA2A917FA19A}
+		{46F3B2F6-2D7E-41C1-9D7B-C85A3E6812B1} = {12244782-40AD-4C14-9FA7-CA2A917FA19A}
+	EndGlobalSection
+EndGlobal
