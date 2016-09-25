@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
 	<metadata>
 		<id>MvvmCross.Plugin.WebBrowser</id>
-		<version>4.1.0</version>
+		<version>4.2.3</version>
 		<title>MvvmCross - WebBrowser Plugin</title>
 		<authors>MvvmCross</authors>
 		<owners>Stuart Lodge</owners>
@@ -16,34 +16,34 @@ This package contains the 'WebBrowser' plugin for MvvmCross</description>
 		<iconUrl>http://i.imgur.com/BvdAtgT.png</iconUrl>
 		<dependencies>
 			<group targetFramework="net">
-				<dependency id="MvvmCross.Platform" version="4.1.0" />
+				<dependency id="MvvmCross.Platform" version="4.2.3" />
 			</group>
 			<group targetFramework="win">
-				<dependency id="MvvmCross.Platform" version="4.1.0" />
+				<dependency id="MvvmCross.Platform" version="4.2.3" />
 			</group>
 			<group targetFramework="wp">
-				<dependency id="MvvmCross.Platform" version="4.1.0" />
+				<dependency id="MvvmCross.Platform" version="4.2.3" />
 			</group>
 			<group targetFramework="wpa">
-				<dependency id="MvvmCross.Platform" version="4.1.0" />
+				<dependency id="MvvmCross.Platform" version="4.2.3" />
 			</group>
 			<group targetFramework="MonoAndroid">
-				<dependency id="MvvmCross.Platform" version="4.1.0" />
+				<dependency id="MvvmCross.Platform" version="4.2.3" />
 			</group>
 			<group targetFramework="Xamarin.Mac20">
-				<dependency id="MvvmCross.Platform" version="4.1.0" />
+				<dependency id="MvvmCross.Platform" version="4.2.3" />
 			</group>
 			<group targetFramework="Xamarin.iOS10">
-				<dependency id="MvvmCross.Platform" version="4.1.0" />
+				<dependency id="MvvmCross.Platform" version="4.2.3" />
 			</group>
 			<group targetFramework="portable-net45+win8+wpa81+wp8">
-				<dependency id="MvvmCross.Platform" version="4.1.0" />
+				<dependency id="MvvmCross.Platform" version="4.2.3" />
 			</group>
 			<group targetFramework="uap">
-				<dependency id="MvvmCross.Platform" version="4.1.0" />
+				<dependency id="MvvmCross.Platform" version="4.2.3" />
 			</group>
 			<group targetFramework="dotnet">
-				<dependency id="MvvmCross.Platform" version="4.1.0" />
+				<dependency id="MvvmCross.Platform" version="4.2.3" />
 			</group>
 		</dependencies>
 	</metadata>
@@ -89,6 +89,12 @@ This package contains the 'WebBrowser' plugin for MvvmCross</description>
 		<file src="..\bin\Release\Mvx\iOS\MvvmCross.Plugins.WebBrowser.iOS.*" target="lib\Xamarin.iOS10" />
 		<file src="iOSBootstrapContent\WebBrowserPluginBootstrap.cs.pp" 
 			target="content\Xamarin.iOS10\Bootstrap\WebBrowserPluginBootstrap.cs.pp" />
+            
+        <!-- WPF -->
+		<file src="..\bin\Release\Mvx\Portable\MvvmCross.Plugins.WebBrowser.*" target="lib\net45" />
+		<file src="..\bin\Release\Mvx\Wpf\MvvmCross.Plugins.WebBrowser.Wpf.*" target="lib\net45" />
+
+		<file src="BootstrapContent\WebBrowserPluginBootstrap.cs.pp" target="content\net45\Bootstrap\WebBrowserPluginBootstrap.cs.pp" />
 			
 		<!-- mac -->
 		<file src="..\bin\Release\Mvx\Portable\MvvmCross.Plugins.WebBrowser.*" target="lib\Xamarin.Mac20" />
@@ -111,8 +117,16 @@ This package contains the 'WebBrowser' plugin for MvvmCross</description>
 
 		<file src="..\WebBrowser\MvvmCross.Plugins.WebBrowser.iOS\**\*.cs" 
 			target="src\MvvmCross.Plugins.WebBrowser.iOS" />
+            
+        <file src="..\WebBrowser\MvvmCross.Plugins.WebBrowser.Wpf\**\*.cs" 
+			target="src\MvvmCross.Plugins.WebBrowser.Wpf" />
 	</files>
 </package>
+
+
+
+
+
 
 
 
