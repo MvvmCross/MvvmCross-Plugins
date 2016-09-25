@@ -1,25 +1,29 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
 using Plugin.Permissions;
-using Plugin.Permissions.Abstractions;
 
 namespace MvvmCross.Plugins.Permissions
 {
     public class MvxPermissions : IMvxPermissions
     {
-        public Task<bool> ShouldShowRequestPermissionRationaleAsync(Permission permission)
+        public Task<bool> ShouldShowRequestPermissionRationaleAsync(MvxPermission permission)
         {
-            return CrossPermissions.Current.ShouldShowRequestPermissionRationaleAsync(permission);
+            return CrossPermissions.Current.ShouldShowRequestPermissionRationaleAsync(permission.ToPermission());
         }
 
-        public Task<PermissionStatus> CheckPermissionStatusAsync(Permission permission)
+        public async Task<MvxPermissionStatus> CheckPermissionStatusAsync(MvxPermission permission)
         {
-            return CrossPermissions.Current.CheckPermissionStatusAsync(permission);
+            var status = await CrossPermissions.Current.CheckPermissionStatusAsync(permission.ToPermission()).ConfigureAwait(false);
+            return status.ToMvxPermissionStatus();
         }
 
-        public Task<Dictionary<Permission, PermissionStatus>> RequestPermissionsAsync(params Permission[] permissions)
+        public async Task<Dictionary<MvxPermission, MvxPermissionStatus>> RequestPermissionsAsync(params MvxPermission[] permissions)
         {
-            return CrossPermissions.Current.RequestPermissionsAsync(permissions);
+            var nativePermissions = permissions.Select(p => p.ToPermission()).ToArray();
+
+            var status = await CrossPermissions.Current.RequestPermissionsAsync(nativePermissions).ConfigureAwait(false);
+            return status.ToDictionary(k => k.Key.ToMvxPermission(), v => v.Value.ToMvxPermissionStatus());
         }
     }
 }

@@ -35,7 +35,10 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="IMvxPermissions.cs" />
+    <Compile Include="MvxPermission.cs" />
+    <Compile Include="MvxPermissionExtensions.cs" />
     <Compile Include="MvxPermissions.cs" />
+    <Compile Include="MvxPermissionStatus.cs" />
     <Compile Include="PluginLoader.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
